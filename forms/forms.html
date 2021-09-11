@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+
+<body>
+    <h1>FORMS DEMO</h1>
+
+    <form action="/jed_sample">
+
+        <!-- types of inputs -->
+        <!-- <input type="color">
+        <input type="text" name="" id="" placeholder="username">
+        <input type="date" name="" id="">
+        <input type="email" name="" id=""> -->
+
+        <!-- label's for attrib is related to input's id attribute -->
+        <!-- <label for="cheese"></label>
+        <input type="text" name="cheese" id="cheese"> -->
+        <p>
+            <label for="username">Enter a username:</label>
+            <input type="text" name="username" id="username" placeholder="username">
+        </p>
+        <p>
+            <label for="password">Enter a password:</label>
+            <input type="password" name="password" id="password" placeholder="password" required>
+        </p>
+        <p>
+            <label for="color">Select a color:</label>
+            <input type="color" name="color" id="color">
+        </p>
+        <p>
+            <label for="number">Enter a number:</label>
+            <input type="number" name="num" id="number">
+        </p>
+        <button>Submit</button>
+    </form>
+    <hr>
+    <h2>Action attribute Form tag</h2>
+    <form action="https://www.google.com/search">
+        <label for="searchBar">Search on google through this box.</label>
+        <input type="text" name="q" id="searchBar">
+        <button>Submit</button>
+    </form>
+    <hr>
+    <h2>Check Inputs</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree_tos" id="agree">
+        <label for="agree">I agree to everything</label>
+        <p>
+            <label for="xs">XS:</label>
+            <input type="radio" name="size" id="xs" value="extra_small">
+            <label for="s">S:</label>
+            <input type="radio" name="size" id="s" value="small">
+            <label for="m">M:</label>
+            <input type="radio" name="size" id="m" value="medium">
+        </p>
+        <!-- SELECT ELEMENT TAG -->
+        <p>
+            <label for="meal">Please select an Entree:</label>
+            <select name="meal" id="meal">
+                <option value="Fish">Fish</option>
+                <option value="Soup">Soup</option>
+                <option value="Chicken">Chicken</option>
+                <option value="Steak">Steak</option>
+                <option value="Vegetarian">Vegetarian</option>
+                <option value="" selected>choose a selection</option>
+            </select>
+            <!-- Range  -->
+        <p>
+            <input type="range" name="volume" id="volume" min="0" max="100" value="25">
+        </p>
+        </p>
+
+
+
+        <button>Submit</button>
+        <hr>
+
+        <p>
+            <label for="">Are there any special requests?</label><br>
+            <textarea name="txtArea_requests" id="" cols="30" rows="10" placeholder="enter requests here"
+                maxlength="120"></textarea>
+        </p>
+
+    </form>
+
+    <hr>
+    <h2>Validations Demo</h2>
+    <form action="/dummy">
+        <label for="first">Enter First Name:</label>
+        <input type="text" name="first" id="first" required>
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
